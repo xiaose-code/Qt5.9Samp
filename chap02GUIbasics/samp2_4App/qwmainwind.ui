@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>543</width>
-    <height>258</height>
+    <width>550</width>
+    <height>314</height>
    </rect>
   </property>
   <property name="font">
@@ -19,29 +19,25 @@
    <string>QWMainWind</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QTextEdit" name="txtEdit">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>15</y>
-      <width>396</width>
-      <height>136</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>16</pointsize>
-     </font>
-    </property>
-   </widget>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTextEdit" name="txtEdit">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>543</width>
-     <height>23</height>
+     <width>550</width>
+     <height>29</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">

@@ -30,18 +30,18 @@ public:
     {
         if (Widget->objectName().isEmpty())
             Widget->setObjectName(QStringLiteral("Widget"));
-        Widget->resize(280, 168);
+        Widget->resize(538, 342);
         LabDemo = new QLabel(Widget);
         LabDemo->setObjectName(QStringLiteral("LabDemo"));
-        LabDemo->setGeometry(QRect(50, 20, 201, 51));
+        LabDemo->setGeometry(QRect(70, 100, 401, 101));
         QFont font;
-        font.setPointSize(20);
-        font.setBold(true);
-        font.setWeight(75);
+        font.setPointSize(48);
+        font.setBold(false);
+        font.setWeight(50);
         LabDemo->setFont(font);
         btnClose = new QPushButton(Widget);
         btnClose->setObjectName(QStringLiteral("btnClose"));
-        btnClose->setGeometry(QRect(150, 120, 75, 23));
+        btnClose->setGeometry(QRect(370, 280, 141, 51));
 
         retranslateUi(Widget);
         QObject::connect(btnClose, SIGNAL(clicked()), Widget, SLOT(close()));

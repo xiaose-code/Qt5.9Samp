@@ -1,15 +1,12 @@
 #include "widget.h"
 #include "ui_widget.h"
 
-Widget::Widget(QWidget *parent) : QWidget(parent),
-                                  ui(new Ui::Widget)
+Widget::Widget(QWidget *parent) : QWidget(parent), ui(new Ui::Widget)
 {
-    // 初始化UI
-    ui->setupUi(this);
+    ui->setupUi(this);  // 实现了组件的各种设置、信号与槽的关联
 }
 
 Widget::~Widget()
 {
-    // 删除UI
     delete ui;
 }

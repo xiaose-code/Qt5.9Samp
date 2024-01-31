@@ -2,10 +2,10 @@
 #define QWMAINWIND_H
 
 #include <QMainWindow>
-#include    <QLabel>
-#include    <QProgressBar>
-#include    <QSpinBox>
-#include    <QFontComboBox>
+#include <QLabel>
+#include <QProgressBar>
+#include <QSpinBox>
+#include <QFontComboBox>
 
 namespace Ui {
 class QWMainWind;

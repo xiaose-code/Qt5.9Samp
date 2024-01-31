@@ -49,7 +49,7 @@ void QWDlgManual::iniUI()
     QVBoxLayout *VLay = new QVBoxLayout;
     VLay->addLayout(HLay1);   // 添加字体类型组
     VLay->addLayout(HLay2);   // 添加字体颜色组
-    VLay->addWidget(txtEdit); // 添加PlainTextEdit
+    VLay->addWidget(txtEdit); // 添加TextEdit
     VLay->addLayout(HLay3);   // 添加按键组
 
     setLayout(VLay); // 设置为窗体的主布局
@@ -58,19 +58,19 @@ void QWDlgManual::iniUI()
 void QWDlgManual::iniSignalSlots()
 {
     // 三个颜色  QRadioButton的clicked()事件与setTextFontColor()槽函数关联
-    connect(rBtnBlue, SIGNAL(clicked()), this, SLOT(setTextFontColor()));  //
-    connect(rBtnRed, SIGNAL(clicked()), this, SLOT(setTextFontColor()));   //
-    connect(rBtnBlack, SIGNAL(clicked()), this, SLOT(setTextFontColor())); //
+    connect(rBtnBlue, SIGNAL(clicked()), this, SLOT(setTextFontColor()));
+    connect(rBtnRed, SIGNAL(clicked()), this, SLOT(setTextFontColor()));
+    connect(rBtnBlack, SIGNAL(clicked()), this, SLOT(setTextFontColor()));
 
     // 三个字体设置的  QCheckBox 的clicked(bool)事件与 相应的槽函数关联
-    connect(chkBoxUnder, SIGNAL(clicked(bool)), this, SLOT(on_chkBoxUnder(bool)));   //
-    connect(chkBoxItalic, SIGNAL(clicked(bool)), this, SLOT(on_chkBoxItalic(bool))); //
-    connect(chkBoxBold, SIGNAL(clicked(bool)), this, SLOT(on_chkBoxBold(bool)));     //
+    connect(chkBoxUnder, SIGNAL(clicked(bool)), this, SLOT(on_chkBoxUnder(bool)));
+    connect(chkBoxItalic, SIGNAL(clicked(bool)), this, SLOT(on_chkBoxItalic(bool)));
+    connect(chkBoxBold, SIGNAL(clicked(bool)), this, SLOT(on_chkBoxBold(bool)));
 
     // 三个按键与窗体的槽函数关联
-    connect(btnOK, SIGNAL(clicked()), this, SLOT(accept()));     //
-    connect(btnCancel, SIGNAL(clicked()), this, SLOT(reject())); //
-    connect(btnClose, SIGNAL(clicked()), this, SLOT(close()));   //
+    connect(btnOK, SIGNAL(clicked()), this, SLOT(accept()));
+    connect(btnCancel, SIGNAL(clicked()), this, SLOT(reject()));
+    connect(btnClose, SIGNAL(clicked()), this, SLOT(close()));
 }
 
 // 当复选框被选中时，设置文本框的字体下划线状态
